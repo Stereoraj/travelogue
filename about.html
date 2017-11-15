@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About us</title>
+	<style type="text/css">
+		body{
+			background-color: #cce6ff;
+		}
+		div{
+			border: solid 1px;
+			border-color: lightGreen;
+			color: yellow;
+			background-color: #3399ff;
+			border-radius: 3px;
+			padding: 4px;
+			margin: 5px;
+		}
+		p, table{
+			visibility: hidden;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function $(id){
+			return document.getElementById(id);
+		}
+
+		function mapEvents(){
+			$('hsec1').addEventListener('click',function(){
+				$('sec1').style.visibility = "visible";
+				$('sec2').style.visibility = "hidden";
+				$('sec3').style.visibility = "hidden";
+			});
+			$('hsec2').addEventListener('click',function(){
+				$('sec1').style.visibility = "hidden";
+				$('sec2').style.visibility = "visible";
+				$('sec3').style.visibility = "hidden";
+			});
+			$('hsec3').addEventListener('click',function(){
+				$('sec1').style.visibility = "hidden";
+				$('sec2').style.visibility = "hidden";
+				$('sec3').style.visibility = "visible";
+				$('tableid').style.visibility = "visible";
+			});
+		}
+
+		function init(){
+			mapEvents();
+		}
+
+		window.addEventListener('load', init);
+	</script>
+</head>
+<body>
+	<h1>About Travelogue.com</h1>
+	<div>
+		<h3 id="hsec1">Who we are?</h3>
+		<p id="sec1">
+			We are a group of people who loves to travel. Know the people and the places, their culture. Motivate ourselves with the new experiences we gain from travelling.
+		</p>
+	</div>
+
+	<div>
+		<h3 id="hsec2">Our passion</h3>
+		<p id="sec2">
+			Travelling is a costly proposition. It involves time, money and lot of suppor tfrom individual family to allow you to spare a time for your own reasons. So we wish to make this experience time immortal so that each of us could remember this for a long time, share it for others and allow their experience too so that it becomes a wonerfull tourist attraction.
+		</p>
+	</div>
+
+	<div>
+		<h3 id="hsec3">Contribute?</h3>
+		<p id="sec3">
+			Ours is a non profit organization with no external financial support from anywhere. However if your wish to contribute, so please do help us by donating money to this account online. We don't accept any cash ...
+
+			<table id="tableid">
+				<tr>
+					<td>Name of the Bank:</td>
+					<td>Karnataka bank</td>
+				</tr>
+				<tr>
+					<td>Bank Branch:</td>
+					<td>Indiranagar, Bangalore</td>
+				</tr>
+
+				<tr>
+					<td>Account No:</td>
+					<td>9900282802234</td>
+				</tr>
+			</table>
+		</p>
+	</div>
+
+	<a href="index.html"> home</a>
+</body>
+</html>

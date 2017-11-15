@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internal Style</title>
+	<style type="text/css">
+
+		.codeblock{
+			width:100%;
+			margin-bottom:8px;
+			font-family:verdana;
+			padding-left:0px;
+			border:1px solid #d5ddc6;
+			border-left:4px solid #6b5;
+			box-shadow:6px 3px 8px #d4d4d4;
+		}
+	</style>
+</head>
+<body>
+	<h1>Applying Internal Style</h1>
+
+	<p>
+		Internal styles are applied on the page that wants the specific styles. There is a style element in the DOM to facilitate the style to be applied on the Page itself. This could be used to scope the styles for all the elements of the page, its clases and its relational elements.
+
+		Internal styles help in creating page level styles that are applicable to all theelements of the page unless overridden by inline styles. Internal styles can have classes, elements inside them.
+	</p>
+	<p>
+		Example:
+	</p>
+
+	<div class="codeblock">
+	
+
+		<p>
+			<code>
+				&lt;html&gt; <br />
+				&lt;head&gt; <br />
+					&lt;title&gt;Internal Styles Demo &lt;/title&gt;<br />
+					&lt;style type="text/css"&gt;<br />
+					body{<br />
+					color:blue; <br />
+					padding: 4px; <br />
+					margin: 4px; <br />
+				}<br />
+			</code>
+		</p>
+	</div>
+
+	<a href="index.html">home</a>
+</body>
+</html>

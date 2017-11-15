@@ -2,16 +2,20 @@
 <html>
 <head>
 	<title>Travelogue App</title>
+	<link rel="stylesheet" type="text/css" href="./css/externalCSS.css" />
 </head>
 <body>
 	<nav>
 		<a href="">Home</a>
-		<a href="">About Us</a>
-		<a href="">Share</a>
-		<a href="">Listings</a>
+		<a href="about.html">About Us</a>
+		<a href="share.html">Share</a>
+		<a href="listings.html">Listings</a>
+
 	</nav>
-	<div>
-	<div>
+
+	<br />
+	<div class="flex-container">
+	<div class="flex-item">
 		<h3>About CSS</h3>
 		<p>CSS is a styling sheet that contain the styles that are to be commonly placed into your HTML document. They are available as inline, 
 			internal as well as external files. CSS is simple to use and has the feature of reusability. <br />
@@ -19,36 +23,36 @@
 		</p>
 	</div>
 
-	<div>
+	<div class="flex-item">
 		<h2>How CSS works ?</h2>
 		<p>HTML browsers will interpret the target elements from the CSS style. Always the first preferences is given to the inline style, then to the internal style and at last to the external files. If no style is mentioned to the specific tag, then the element will be provided with default style defined by the DOM structure which also includes the preferences of the user in the browser</p>
 	</div>
 	</div>
 
-	<div>
-		<div>
+	<div class="flex-container">
+		<div class="flex-item">
 			<h3> Applying inline styles </h3>
 			<p>Every element has a style attribute that could be set with CSS features that is scoped to the element. Each style of CSS are placed as key:value pairs each seperated by ; . The inline style is scoped only to the element to which it is declared. The styles of the element are also applicable to the child elements unless they have ehir own styles.
-				<a href="InlineStyles.html">More....</a>
+				<a href="inlineStyles.html">More....</a>
 			</p>
 		</div>
 
-		<div>
+		<div class="flex-item">
 			<h3>
 				Applying internal styles
 			</h3>
 
 			<p>Internal styles are applied on the page that wants the specific styles. There is a style element in the DOM to facilitate the style to be applied on the Page itself. This could be used to scope the styles for all the elements of the page, its clases and its relational elements.
-			<a href="InternalStyles.html">More ...</a>			
+			<a href="internalStyle.html">More ...</a>			
 			</p>
 		</div>
 
-		<div>
+		<div class="flex-item">
 			<h3>Applying External styles</h3>
 			<p>
 				CSS can be professionally created as a file with an extension .css. This file couldbe a central point where all the styles of your application are places. By using this feature you could provide high level of reuseability of your styles across the pages. Every page that consumes this style will have a link tag associated with attributes like type and src.
 
-				<a href="ExternalStyles.html">More....</a>
+				<a href="externalStyles.html">More....</a>
 			</p>
 		</div>
 </div>
